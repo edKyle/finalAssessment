@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		1093F345DD68200877AE9D30 /* Pods-final Assessment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-final Assessment.release.xcconfig"; path = "Pods/Target Support Files/Pods-final Assessment/Pods-final Assessment.release.xcconfig"; sourceTree = "<group>"; };
-		277407221D54BF3500119AB5 /* 所有題目的考試過程.pages */ = {isa = PBXFileReference; lastKnownFileType = file; path = "所有題目的考試過程.pages"; sourceTree = "<group>"; };
+		276CABAC1D5630C700D4B35F /* 所有題目的考試過程.pages */ = {isa = PBXFileReference; lastKnownFileType = file; path = "所有題目的考試過程.pages"; sourceTree = "<group>"; };
 		27877EB51D53029400E022AA /* ServerRequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerRequestViewController.swift; sourceTree = "<group>"; };
 		27986AA11D52F98500D3A436 /* final Assessment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "final Assessment.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		27986AA41D52F98500D3A436 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -101,7 +101,7 @@
 		27A6CCC01D5350E30080766D /* final AssessAnswer */ = {
 			isa = PBXGroup;
 			children = (
-				277407221D54BF3500119AB5 /* 所有題目的考試過程.pages */,
+				276CABAC1D5630C700D4B35F /* 所有題目的考試過程.pages */,
 				27986AB71D52FD9B00D3A436 /* 0~100總和.playground */,
 				27986AA81D52F98500D3A436 /* Main.storyboard */,
 				27986AA61D52F98500D3A436 /* ViewController.swift */,
@@ -174,6 +174,7 @@
 				TargetAttributes = {
 					27986AA01D52F98500D3A436 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 8H7X36TF25;
 					};
 				};
 			};
@@ -386,6 +387,7 @@
 			baseConfigurationReference = 374CEBDC89EB7862E98E17A9 /* Pods-final Assessment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "final Assessment/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "co.Alphacamp.final-Assessment";
@@ -398,6 +400,7 @@
 			baseConfigurationReference = 1093F345DD68200877AE9D30 /* Pods-final Assessment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "final Assessment/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "co.Alphacamp.final-Assessment";
