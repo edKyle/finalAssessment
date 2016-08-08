@@ -72,11 +72,13 @@ class TableViewController: UITableViewController,UIImagePickerControllerDelegate
     }
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete && PictureData.pictureArray.count>0 && PictureData.nameArray.count>0{
+            
             PictureData.pictureArray.removeAtIndex(indexPath.row)
             PictureData.nameArray.removeAtIndex(indexPath.row)
             
             userDefault.setObject(PictureData.nameArray, forKey: "name")
-            userDefault.setObject(PictureData.pictureArray, forKey: "picture")
+            let path = userDefault.objectForKey("path") as! String
+            NSArray(array: PictureData.pictureArray).writeToFile(path, atomically:true)
             
             self.loadDatatoArray()
             self.tableView.reloadData()
@@ -97,7 +99,6 @@ class TableViewController: UITableViewController,UIImagePickerControllerDelegate
             picker.sourceType = .Camera
             picker.delegate = self
             picker.allowsEditing = false
-            picker.sourceType = .Camera
             self.presentViewController(picker, animated: true, completion: nil)
             
         } else {
@@ -122,7 +123,15 @@ class TableViewController: UITableViewController,UIImagePickerControllerDelegate
     func loadDatatoArray(){
         if userDefault.boolForKey("already") == true {
         
-        PictureData.pictureArray = userDefault.objectForKey("picture") as! [NSData]
+        let path = userDefault.objectForKey("path") as! String
+        let passArray = NSArray(contentsOfFile: path)
+        
+        PictureData.pictureArray = []
+            for n in passArray!{
+                PictureData.pictureArray.append(n as! NSData)
+            }
+            
+            
         PictureData.nameArray = userDefault.objectForKey("name") as! [String]
         PictureData.pictureImageArray = []
             for n in PictureData.pictureArray{

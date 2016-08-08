@@ -13,4 +13,5 @@ class PictureData{
     static var pictureArray:[NSData] = []
     static var pictureImageArray:[UIImage] = []
     static var nameArray:[String] = []
+
 }
