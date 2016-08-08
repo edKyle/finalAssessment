@@ -12,6 +12,7 @@ class savePhotoViewController: UIViewController,UITextFieldDelegate{
     
     @IBOutlet weak var saveField: UITextField!
     @IBOutlet weak var saveImageView: UIImageView!
+    var viewAlreadyUp = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,16 +33,18 @@ class savePhotoViewController: UIViewController,UITextFieldDelegate{
     
     func keyboardWillShow() {
         self.view.frame.origin.y -= 200
+        self.viewAlreadyUp = true
     }
     
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         saveField.resignFirstResponder()
         self.view.frame.origin.y += 200
+        self.viewAlreadyUp = false
         return true
     }
     
     @IBAction func saveButton(sender: AnyObject) {
-        if saveField.text != ""{
+        if saveField.text!.isEmptyOrWhitespace() == false{
             let imageData: NSData = UIImageJPEGRepresentation(TableViewController.image!, 1)!
             PictureData.nameArray.append(saveField.text!)
             PictureData.pictureArray.append(imageData)
@@ -60,18 +63,20 @@ class savePhotoViewController: UIViewController,UITextFieldDelegate{
             let action = UIAlertAction(title: "OK", style: .Cancel, handler: nil)
             alert.addAction(action)
             self.presentViewController(alert, animated: true, completion: nil)
+            if viewAlreadyUp{
+                saveField.resignFirstResponder()
+                self.view.frame.origin.y += 200
+                self.viewAlreadyUp = false
+
+            }
         }
     }
-    
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
+}
+extension String {
+    func isEmptyOrWhitespace() -> Bool {
+        if(self.isEmpty) {
+            return true
+        }
+        return (self.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet()) == "")
+    }
 }
