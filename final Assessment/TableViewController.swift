@@ -28,7 +28,7 @@ class TableViewController: UITableViewController,UIImagePickerControllerDelegate
     }
     override func viewDidAppear(animated: Bool) {
         self.loadDatatoArray()
-        self.tableView.reloadData()
+        tableView.reloadData()
     }
     
     override func didReceiveMemoryWarning() {

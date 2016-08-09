@@ -21,7 +21,7 @@
 		27A6CCEA1D538F030080766D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A6CCE91D538F030080766D /* TableViewController.swift */; };
 		27A6CCED1D5393FC0080766D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A6CCEB1D5393FC0080766D /* TableViewCell.swift */; };
 		27A6CCEE1D5393FC0080766D /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27A6CCEC1D5393FC0080766D /* TableViewCell.xib */; };
-		27A6CCF01D53A00E0080766D /* savePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A6CCEF1D53A00E0080766D /* savePhotoViewController.swift */; };
+		27A6CCF01D53A00E0080766D /* SavePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A6CCEF1D53A00E0080766D /* SavePhotoViewController.swift */; };
 		27A6CCF21D54301E0080766D /* PictureData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A6CCF11D54301E0080766D /* PictureData.swift */; };
 		27A6CCF41D5436DA0080766D /* BigPictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A6CCF31D5436DA0080766D /* BigPictureViewController.swift */; };
 		D5A19658720DAE6FAA8FBA7C /* Pods_final_Assessment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCB156AF9CE6A681996B775C /* Pods_final_Assessment.framework */; };
@@ -47,7 +47,7 @@
 		27A6CCE91D538F030080766D /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		27A6CCEB1D5393FC0080766D /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		27A6CCEC1D5393FC0080766D /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
-		27A6CCEF1D53A00E0080766D /* savePhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = savePhotoViewController.swift; sourceTree = "<group>"; };
+		27A6CCEF1D53A00E0080766D /* SavePhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavePhotoViewController.swift; sourceTree = "<group>"; };
 		27A6CCF11D54301E0080766D /* PictureData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureData.swift; sourceTree = "<group>"; };
 		27A6CCF31D5436DA0080766D /* BigPictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BigPictureViewController.swift; sourceTree = "<group>"; };
 		374CEBDC89EB7862E98E17A9 /* Pods-final Assessment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-final Assessment.debug.xcconfig"; path = "Pods/Target Support Files/Pods-final Assessment/Pods-final Assessment.debug.xcconfig"; sourceTree = "<group>"; };
@@ -112,7 +112,7 @@
 				27A6CCE91D538F030080766D /* TableViewController.swift */,
 				27A6CCEB1D5393FC0080766D /* TableViewCell.swift */,
 				27A6CCEC1D5393FC0080766D /* TableViewCell.xib */,
-				27A6CCEF1D53A00E0080766D /* savePhotoViewController.swift */,
+				27A6CCEF1D53A00E0080766D /* SavePhotoViewController.swift */,
 				27A6CCF31D5436DA0080766D /* BigPictureViewController.swift */,
 				27A6CCF11D54301E0080766D /* PictureData.swift */,
 			);
@@ -264,7 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27A6CCF01D53A00E0080766D /* savePhotoViewController.swift in Sources */,
+				27A6CCF01D53A00E0080766D /* SavePhotoViewController.swift in Sources */,
 				27A6CCF21D54301E0080766D /* PictureData.swift in Sources */,
 				27A6CCF41D5436DA0080766D /* BigPictureViewController.swift in Sources */,
 				27A6CCC31D5351520080766D /* CollectionViewCell.swift in Sources */,

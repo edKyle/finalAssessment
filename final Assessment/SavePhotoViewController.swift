@@ -8,7 +8,7 @@
 
 import UIKit
 
-class savePhotoViewController: UIViewController,UITextFieldDelegate{
+class SavePhotoViewController: UIViewController,UITextFieldDelegate{
     
     @IBOutlet weak var saveField: UITextField!
     @IBOutlet weak var saveImageView: UIImageView!
@@ -45,6 +45,7 @@ class savePhotoViewController: UIViewController,UITextFieldDelegate{
     
     @IBAction func saveButton(sender: AnyObject) {
         if saveField.text!.isEmptyOrWhitespace() == false{
+
             let imageData = UIImageJPEGRepresentation(TableViewController.image!, 1)!
 
             PictureData.nameArray.append(saveField.text!)

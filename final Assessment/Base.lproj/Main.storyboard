@@ -8,7 +8,7 @@
         <!--Save Photo View Controller-->
         <scene sceneID="jDj-oV-zc0">
             <objects>
-                <viewController id="DPE-2o-d5V" customClass="savePhotoViewController" customModule="final_Assessment" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="DPE-2o-d5V" customClass="SavePhotoViewController" customModule="final_Assessment" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sON-G0-SUO"/>
                         <viewControllerLayoutGuide type="bottom" id="qG7-IX-fNJ"/>
@@ -209,7 +209,7 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="urP-mz-Jqu" id="LwL-YR-0eH">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
